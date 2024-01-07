@@ -10,6 +10,7 @@ import { MessengerappComponent } from './pages/homepage/home-component/messenger
 import { CoverComponent } from './pages/homepage/home-component/cover/cover.component'; 
 import { CardComponent } from './pages/homepage/home-component/messengerapp/card/card.component'; 
 import { OurservicesComponent } from './pages/homepage/home-component/ourservices/ourservices.component';
+import { LoginpageComponent } from './pages/loginpage/loginpage.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { OurservicesComponent } from './pages/homepage/home-component/ourservice
     CoverComponent,
     CardComponent,
     OurservicesComponent,
+    LoginpageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

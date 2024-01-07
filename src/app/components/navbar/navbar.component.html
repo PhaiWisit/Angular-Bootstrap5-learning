@@ -1,18 +1,39 @@
-<nav style="
-background-color: whitesmoke;
-z-index: 10000;
-position: fixed;
-top: 0px;
-width: 100%;">
-    <div class="logo">
-        <h3 class="">Line</h3>
-
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light"
+  style="
+    background-color: white;
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    justify-content: space-between;
+  "
+>
+  <div class="container-fluid justify-content-between">
+    <a class="navbar-brand" href="#">LINE</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse text-center justify-content-between"
+      id="navbarNavAltMarkup"
+    >
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="#home">Life on LINE</a>
+        <a class="nav-link" href="#about">แอพฯ เพื่อการติดต่อสื่อสาร</a>
+        <a class="nav-link" href="#service">บริการต่าง ๆ</a>
+      </div>
+      <button [routerLink]="['/login']" class="btn btn-outline-success">
+        Login
+      </button>
     </div>
-    <ul class="menu">
-        <li><a href="#home" target="_self">Life on LINE</a></li>
-        <li><a href="#about" >แอพฯ เพื่อการติดต่อสื่อสาร</a></li>
-        <li><a href="#service">บริการต่าง ๆ</a></li>
-        
-    </ul>
-    <div>ภาษา</div>
+  </div>
 </nav>

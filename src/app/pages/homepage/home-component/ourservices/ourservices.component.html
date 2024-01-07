@@ -1,3 +1,75 @@
-<div class="container" id="service">
-    <p>This is service section</p>
+<div class="container-fluid" style="background-color: #f6f7f8">
+  <div class="container pt-5" id="service">
+    <div class="row">
+      <div class="col-12"><div class="fs-1 text-center">บริการต่าง ๆ</div></div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-xl-3 col-lg-3 col-12">
+        <div class="row">
+          <div class="col-xl-7 col-lg-8">
+            <button
+              class="btn btn-outline-success mt-3 me-3"
+              style="border-radius: 20px"
+              (click)="onClickSelectCategory('all')"
+            >
+              บริการต่าง ๆ
+            </button>
+            <button
+              class="btn btn-outline-success mt-3 me-3"
+              style="border-radius: 20px"
+              (click)="onClickSelectCategory('messenger')"
+            >
+              การสื่อสาร
+            </button>
+            <button
+              class="btn btn-outline-success mt-3 me-3"
+              style="border-radius: 20px"
+              (click)="onClickSelectCategory('entertainment')"
+            >
+              ความบันเทิง
+            </button>
+            <button
+              class="btn btn-outline-success mt-3 me-3"
+              style="border-radius: 20px"
+              (click)="onClickSelectCategory('shopping')"
+            >
+              ช้อปปี้ง
+            </button>
+            <button
+              class="btn btn-outline-success mt-3 me-3"
+              style="border-radius: 20px"
+              (click)="onClickSelectCategory('fintech')"
+            >
+              ฟินเทค
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9 col-12">
+        <div class="row mt-5">
+          <div
+            class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12"
+            *ngFor="let service of selectData"
+          >
+            <!-- <div
+              class="productCard col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12"
+            > -->
+            <div class="productCard">
+              <div class="productIcon">
+                <img
+                  src="{{ service.icon }}"
+                  alt=""
+                  width="100%"
+                  style="object-fit: cover"
+                />
+              </div>
+
+              <p>{{ service.title }}</p>
+              <p>{{ service.des }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

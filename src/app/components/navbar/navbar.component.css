@@ -1,24 +1,25 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
+  background-color: white;
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  justify-content: space-between;
+}
 
-    & .logo{
-        /* color: #fff; */
-    }
+.menu a.highlight {
+  color: red; /* หรือสีที่คุณต้องการ highlight */
+}
 
-    & .menu{
-        display: flex;
-        list-style: none;
-     & li{
-        margin: 0 2rem;
-        & a {
-            color: #000;
-            text-decoration: none;
-        }
-     }
+.btnshow {
+  display: flex;
+}
 
-    }
-
-
+@media (max-width: 1000px) {
+  nav {
+    justify-content: none;
+  }
+  .btnshow {
+    display: none;
+  }
 }
