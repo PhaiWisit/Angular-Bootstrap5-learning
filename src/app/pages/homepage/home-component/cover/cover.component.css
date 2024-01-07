@@ -1,0 +1,45 @@
+.iconbtn {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1;
+    border-color: white;
+  }
+  
+  .iconbtn:hover {
+    background-color: #00B900;
+  }
+  
+  .iconbtn:hover img {
+    content: url("/assets/icons/download.png"); /* เปลี่ยนไอคอนเมื่อ hover */
+  }
+  
+  .textlarge{
+    font-size:70px;
+    font-weight: 900;
+  }
+  .textmedium {
+    font-size :35px
+  }
+  
+  .transform-ml {
+    transform: translate(200px, 200px);
+  }
+  
+  @media(max-width: 700px)
+  {
+    .textlarge{
+      font-size:40px;
+      font-weight: 900;
+    }
+    .textmedium {
+      font-size :20px
+    }
+    .transform-ml {
+      transform: translate(50px, 200px);
+    }
+  }
+  
+  

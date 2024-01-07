@@ -1,0 +1,21 @@
+<div id="about" style="margin-top: 100px; background-color: rgb(234, 234, 234)">
+  <div class="container mx-auto pt-5">
+    <p class="text-center fs-1">แอพฯ เพื่อการติดต่อสื่อสาร</p>
+    <p class="text-center fs-5">
+      LINE แอพฯ สำหรับการสื่อสารที่คุณสามารถรับ-ส่งข้อความ โทรด้วยเสียงและ
+      วิดีโอได้ทุกที่ทุกเวลา ฟรีตลอด 24 ชั่วโมง
+    </p>
+  </div>
+
+  <div class="container-fluid !direction !spacing">
+    <div class="row ${1| ,row-cols-3,justify-content-md-center,|}">
+      <div *ngFor="let card of cardsData" class="col col-md-4 mx-auto mt-5">
+        <app-card
+          [title]="card.title"
+          [content]="card.content"
+          [image]="card.image"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+</div>

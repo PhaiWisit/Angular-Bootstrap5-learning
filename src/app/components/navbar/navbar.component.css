@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+
+    & .logo{
+        /* color: #fff; */
+    }
+
+    & .menu{
+        display: flex;
+        list-style: none;
+     & li{
+        margin: 0 2rem;
+        & a {
+            color: #000;
+            text-decoration: none;
+        }
+     }
+
+    }
+
+
+}
